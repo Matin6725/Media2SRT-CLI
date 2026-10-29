@@ -80,18 +80,12 @@ Once the program starts, you can interact with the main menu using the following
 
    * Once finished, choose whether to overwrite the original `.srt` file or keep the translated version as `lecture_new.srt`.
 
-## ⚙️ Configuration
-
-Advanced subtitle and chunking settings can be customized at the top of `Audio-to-SRT.py`:
-
-* `ALLOW_TWO_LINES`, `MAX_WORDS_PER_LINE`, `MAX_CHARS_PER_LINE`: Control subtitle formatting and line length.
-
-* `MIN_DURATION`, `MAX_DURATION`, `MAX_GAP`: Fine-tune subtitle display timing and pause detection.
-
-* `SPLIT_DURATION_MINUTES`: Threshold in minutes for splitting long videos into chunks (set to `30` by default, or `None` to disable).
-
-*(Your API keys, recent languages, and active job states are stored locally in `config.json`, which is excluded from Git via `.gitignore`.)*
+   *(Your API keys, recent languages, and active job states are stored locally in `config.json`, which is excluded from Git via `.gitignore`.)*
 
 ## 📄 License
 
 This project is licensed under the **MIT License**.
+## 🙏 Acknowledgments
+
+This tool uses **FFmpeg** (https://ffmpeg.org) for media processing. We sincerely thank the FFmpeg contributors for their outstanding work.
+
